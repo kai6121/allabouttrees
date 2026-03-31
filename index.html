@@ -3,308 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All About Trees | Landscaping Specialists</title>
+<title>All About Trees | Professional Landscaping & Tree Surgery</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-html { scroll-behavior: smooth; }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: #111;
-  background: #f7f9f8;
-}
-
-/* NAV */
-nav {
-  position: fixed;
-  width: 100%;
-  padding: 16px 40px;
-  display: flex;
-  justify-content: space-between;
-  background: rgba(255,255,255,0.9);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-}
-
-nav h1 {
-  font-size: 15px;
-  letter-spacing: 2px;
-}
-
-nav a {
-  margin-left: 18px;
-  text-decoration: none;
-  font-size: 13px;
-  color: #333;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  background:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
-    url("https://images.unsplash.com/photo-1593696140826-c58b021acf8b")
-    center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-
-.hero h2 {
-  font-size: 54px;
-}
-
-.hero p {
-  max-width: 650px;
-  margin: 20px auto;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 26px;
-  background: #1f7a4d;
-  color: white;
-  border-radius: 999px;
-  text-decoration: none;
-}
-
-/* SECTION */
-.section {
-  padding: 120px 20px;
-  max-width: 1100px;
-  margin: auto;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 36px;
-}
-
-.section p {
-  max-width: 700px;
-  margin: auto;
-  color: #555;
-}
-
-/* SERVICES */
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 50px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 14px;
-  border: 1px solid #eee;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-/* SLIDER */
-.slider-container {
-  display: grid;
-  gap: 40px;
-  margin-top: 50px;
-}
-
-.slider {
-  position: relative;
-}
-
-.before-after {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.before-after img {
-  width: 100%;
-  display: block;
-}
-
-.after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  overflow: hidden;
-}
-
-.range {
-  width: 100%;
-  margin-top: 10px;
-}
-
-/* CONTACT */
-.contact {
-  background: #111;
-  color: white;
-  padding: 120px 20px;
-  text-align: center;
-}
-
-.contact a {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 28px;
-  border-radius: 999px;
-  background: #1f7a4d;
-  color: white;
-  text-decoration: none;
-}
-
-/* CALL BUTTON */
-.call-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #1f7a4d;
-  color: white;
-  padding: 14px 18px;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: white;
-  border-top: 1px solid #eee;
-  font-size: 13px;
-}
-
-/* FADE */
-.fade {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
-}
+body { font-family: 'Inter', sans-serif; }
+h1,h2,h3 { font-family: 'Outfit', sans-serif; }
 </style>
 
 </head>
 
-<body>
+<body class="bg-[#f7f9f8] text-gray-800">
 
-<nav>
-  <h1>ALL ABOUT TREES</h1>
-  <div>
-    <a href="#services">Services</a>
-    <a href="#work">Work</a>
-    <a href="#contact">Contact</a>
+<!-- NAV -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-lg font-bold tracking-wide">ALL ABOUT TREES</h1>
+    <div class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
 </nav>
 
-<section class="hero fade">
-  <div>
-    <h2>Professional Landscaping</h2>
-    <p>Expert garden maintenance, tree care, and outdoor transformations built to last.</p>
-    <a href="#services" class="btn">Explore Services</a>
+<!-- HERO -->
+<section class="relative h-screen flex items-center justify-center text-center text-white">
+  <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 max-w-2xl px-6">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+      Professional Landscaping & Tree Care
+    </h1>
+    <p class="mt-6 text-lg text-gray-200">
+      Expert garden maintenance, tree surgery, and outdoor transformations delivered with precision and care.
+    </p>
+
+    <a href="tel:+441234567890" class="mt-8 inline-block bg-green-700 hover:bg-green-800 px-8 py-4 rounded-full font-semibold">
+      Call Now
+    </a>
   </div>
 </section>
 
-<section id="services" class="section fade">
-  <h2>Our Services</h2>
+<!-- SERVICES -->
+<section id="services" class="py-20 max-w-7xl mx-auto px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
 
-  <div class="services">
+  <div class="grid md:grid-cols-3 gap-8">
 
-    <div class="card fade">
-      <h3>Garden Maintenance</h3>
-      <p>Clean, sharp, and healthy outdoor spaces all year round.</p>
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg mb-3">Tree Removal</h3>
+      <p>Safe and efficient removal of unwanted or hazardous trees with minimal disruption.</p>
     </div>
 
-    <div class="card fade">
-      <h3>Tree Pruning</h3>
-      <p>Professional trimming to improve structure and safety.</p>
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg mb-3">Tree Pruning</h3>
+      <p>Professional shaping and trimming to improve health, safety, and appearance.</p>
     </div>
 
-    <div class="card fade">
-      <h3>Tree Removal</h3>
-      <p>Safe and controlled removal of unwanted or dangerous trees.</p>
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg mb-3">Hedge Cutting</h3>
+      <p>Precise hedge maintenance to keep your garden clean, structured, and refined.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg mb-3">Stump Grinding</h3>
+      <p>Complete stump removal to restore space and improve your outdoor environment.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg mb-3">Garden Maintenance</h3>
+      <p>Ongoing care to keep your lawn, plants, and outdoor space looking immaculate.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg mb-3">Landscaping</h3>
+      <p>Full outdoor transformations designed to elevate your property’s appearance and value.</p>
     </div>
 
   </div>
 </section>
 
-<section id="work" class="section fade">
-  <h2>Our Work</h2>
-  <p>Real outdoor landscaping transformations.</p>
+<!-- WORK -->
+<section id="work" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Recent Projects</h2>
+    <p class="text-gray-600 mb-12">Real landscaping work — gardens, lawns, and outdoor transformations.</p>
 
-  <div class="slider-container">
+    <div class="grid md:grid-cols-2 gap-10">
 
-    <div class="slider">
-      <div class="before-after">
-        <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b">
-        <div class="after">
-          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6">
-        </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b" class="rounded-xl">
+        <p class="mt-4 text-sm text-gray-500">Before</p>
       </div>
-      <input type="range" min="0" max="100" value="50" class="range">
-    </div>
 
-    <div class="slider">
-      <div class="before-after">
-        <img src="https://images.unsplash.com/photo-1591955506264-3f5a6834570a">
-        <div class="after">
-          <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
-        </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" class="rounded-xl">
+        <p class="mt-4 text-sm text-gray-500">After</p>
       </div>
-      <input type="range" min="0" max="100" value="50" class="range">
-    </div>
 
+    </div>
   </div>
 </section>
 
-<section class="contact fade" id="contact">
-  <h2>Get a Free Quote</h2>
-  <p>Call today and speak directly with a professional.</p>
-  <a href="tel:+441234567890">Call Now</a>
+<!-- CONTACT -->
+<section id="contact" class="py-20 text-center bg-[#1f3a1f] text-white">
+  <h2 class="text-3xl font-bold">Get Your Free Quote</h2>
+  <p class="mt-4 text-gray-200">Call today and speak directly with our team.</p>
+
+  <a href="tel:+441234567890" class="mt-8 inline-block bg-green-600 px-8 py-4 rounded-full font-semibold hover:bg-green-700">
+    Call Now
+  </a>
 </section>
 
-<footer>
+<!-- FOOTER -->
+<footer class="text-center py-6 text-sm text-gray-500 bg-white">
   © 2026 All About Trees
 </footer>
-
-<a class="call-btn" href="tel:+441234567890">📞 Call</a>
-
-<script>
-document.querySelectorAll('.slider').forEach(slider => {
-  const range = slider.querySelector('.range');
-  const after = slider.querySelector('.after');
-
-  range.addEventListener('input', () => {
-    after.style.width = range.value + '%';
-  });
-});
-
-const elements = document.querySelectorAll('.fade');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-});
-
-elements.forEach(el => observer.observe(el));
-</script>
 
 </body>
 </html>
