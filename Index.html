@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All About Trees</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #111;
+    background: #f6f8f7;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+  }
+
+  nav h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #145a32, #27ae60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+
+  nav a:hover {
+    color: #27ae60;
+  }
+
+  /* BUTTON */
+  .btn {
+    background: linear-gradient(135deg, #145a32, #27ae60);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 6px 20px rgba(39,174,96,0.25);
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+  /* HERO */
+  .hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6")
+      center/cover no-repeat;
+  }
+
+  .hero h2 {
+    font-size: 54px;
+    max-width: 800px;
+  }
+
+  .hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #ddd;
+  }
+
+  /* SECTION */
+  .section {
+    padding: 90px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .section p {
+    max-width: 800px;
+    margin: auto;
+    color: #555;
+    line-height: 1.7;
+  }
+
+  /* GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+  }
+
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  }
+
+  .card h3 {
+    color: #145a32;
+  }
+
+  /* IMAGE */
+  .img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  /* CALL BUTTON */
+  .call {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #145a32, #27ae60);
+    color: white;
+    padding: 16px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    background: white;
+    font-size: 14px;
+    color: #777;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>All About Trees</h1>
+  <div>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h2>Expert Tree Care & Landscaping</h2>
+    <p>
+      Professional tree services delivered with precision, safety, and a commitment to enhancing your outdoor space.
+    </p>
+    <a href="#services" class="btn">View Services</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    All About Trees provides expert tree care, maintenance, and landscaping services.
+    We combine experience, attention to detail, and modern techniques to deliver exceptional results for every client.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Tree Removal</h3>
+      <p>Safe and efficient removal of unwanted or dangerous trees.</p>
+    </div>
+
+    <div class="card">
+      <h3>Tree Pruning</h3>
+      <p>Careful trimming to improve tree health and appearance.</p>
+    </div>
+
+    <div class="card">
+      <h3>Hedge Maintenance</h3>
+      <p>Professional shaping and upkeep for clean, tidy hedges.</p>
+    </div>
+
+    <div class="card">
+      <h3>Garden Care</h3>
+      <p>Full garden maintenance to keep your outdoor space looking perfect.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="section">
+  <h2>Our Work</h2>
+
+  <div class="grid">
+    <img class="img" src="https://images.unsplash.com/photo-1599687266725-0c2d3c6b6b0a">
+    <img class="img" src="https://images.unsplash.com/photo-1505664194779-8beaceb93744">
+    <img class="img" src="https://images.unsplash.com/photo-1589998059171-988d887df646">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Get In Touch</h2>
+  <p>Contact us today for a free quote and expert advice.</p>
+  <br>
+  <a href="tel:+441234567890" class="btn">Call Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © <span id="year"></span> All About Trees
+</footer>
+
+<!-- FLOAT CALL -->
+<a href="tel:+441234567890" class="call">📞 Call</a>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
