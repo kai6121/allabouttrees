@@ -1,154 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All About Trees - Expert Tree Surgery & Landscaping in Leicester</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All About Trees - Expert Tree Surgery & Landscaping in Leicester</title>
 
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Color Palette -->
+<style>
+:root {
+    --primary-color: #2D5016;
+    --primary-button-text-color: #FFFFFF;
+    --primary-button-hover-bg-color: #1F3810;
+    --primary-button-hover-text-color: #FFFFFF;
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    --secondary-button-bg-color: #FFFFFF;
+    --secondary-button-text-color: #2D5016;
+    --secondary-button-hover-bg-color: #F0F5ED;
+    --secondary-button-hover-text-color: #2D5016;
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#2D5016',
-            accent: '#7BA05B'
-          },
-          fontFamily: {
-            heading: ['Outfit', 'sans-serif'],
-            body: ['Inter', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+    --accent-color: #7BA05B;
 
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    h1, h2, h3 { font-family: 'Outfit', sans-serif; }
-  </style>
+    --dark-text-color: #1A1A1A;
+    --gray-text-color: #6B7280;
+
+    --light-background-color: #F7FAF5;
+    --medium-background-color: #EEF4EA;
+
+    --light-border-color: #E0E7DC;
+}
+</style>
+
+<!-- Fonts + Tailwind -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body { font-family: 'Inter', sans-serif; }
+h1, h2, h3 { font-family: 'Outfit', sans-serif; }
+</style>
 </head>
 
-<body class="bg-[#F7FAF5] text-[#1A1A1A]">
+<body class="bg-white text-[#1A1A1A]">
 
 <!-- HEADER -->
-<header class="bg-white shadow-sm sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
-    <img src="https://assets.ls-assets.com/uploads/6a0bd2d5-23f2-4b8f-adf7-df0fa89f4fb9/1e4d7d7c-6084-4229-a92c-795ff3043bd0.webp?w=768" class="h-12" alt="Logo">
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+<nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
 
-    <nav class="hidden lg:flex gap-8 font-medium">
-      <a href="#services" class="hover:text-primary">Services</a>
-      <a href="#projects" class="hover:text-primary">Projects</a>
-      <a href="#about" class="hover:text-primary">About</a>
-      <a href="#contact" class="hover:text-primary">Contact</a>
-    </nav>
+<!-- LOGO -->
+<a href="/">
+<img src="https://assets.ls-assets.com/uploads/6a0bd2d5-23f2-4b8f-adf7-df0fa89f4fb9/1e4d7d7c-6084-4229-a92c-795ff3043bd0.webp?w=768"
+class="h-12">
+</a>
 
-    <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90">
-      Get Free Quote
-    </a>
-  </div>
+<!-- NAV -->
+<div class="hidden md:flex gap-8 items-center">
+<a href="#" class="hover:text-[#2D5016]">Services</a>
+<a href="#" class="hover:text-[#2D5016]">Gallery</a>
+<a href="#" class="hover:text-[#2D5016]">About</a>
+<a href="#" class="hover:text-[#2D5016]">Contact</a>
+</div>
+
+<a href="tel:+441234567890"
+class="bg-[#2D5016] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1F3810]">
+Call Now
+</a>
+
+</nav>
 </header>
 
 <!-- HERO -->
 <section class="relative h-[90vh] flex items-center">
-  <img src="https://assets.ls-assets.com/provider/istock/2247263045.jpg?w=1920" class="absolute w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/60"></div>
 
-  <div class="relative max-w-7xl mx-auto px-6">
-    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-      Expert Tree Surgery & Landscaping in <span class="text-accent">Leicester</span>
-    </h1>
+<img src="https://assets.ls-assets.com/provider/istock/2247263045.jpg?w=1920"
+class="absolute w-full h-full object-cover">
 
-    <p class="text-gray-200 max-w-xl mb-8 text-lg">
-      Professional garden care, tree surgery, and landscaping services tailored to your outdoor space.
-    </p>
+<div class="absolute w-full h-full bg-black/60"></div>
 
-    <div class="flex gap-4 flex-wrap">
-      <a href="tel:+441234567890" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold">
-        <i class="fa-solid fa-phone mr-2"></i> Call Now
-      </a>
-      <a href="#contact" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold">
-        Get a Quote
-      </a>
-    </div>
-  </div>
+<div class="relative max-w-7xl mx-auto px-6 text-white">
+<h1 class="text-5xl font-bold leading-tight mb-6">
+Expert Tree Surgery & Landscaping
+</h1>
+
+<p class="text-lg mb-8 max-w-xl text-gray-200">
+Professional, reliable tree care and landscaping services delivering high-quality results across Leicester.
+</p>
+
+<div class="flex gap-4">
+<a href="tel:+441234567890"
+class="bg-[#2D5016] px-6 py-3 rounded-lg font-semibold hover:bg-[#1F3810]">
+Call Now
+</a>
+
+<a href="#"
+class="bg-white text-[#2D5016] px-6 py-3 rounded-lg font-semibold">
+Get Quote
+</a>
+</div>
+</div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="py-24 max-w-7xl mx-auto px-6">
-  <h2 class="text-4xl font-bold text-center mb-16">Our Services</h2>
+<section class="py-20 bg-[#F7FAF5]">
+<div class="max-w-7xl mx-auto px-6">
 
-  <div class="grid md:grid-cols-3 gap-10">
+<h2 class="text-3xl font-bold mb-10 text-center">
+Our Services
+</h2>
 
-    <div class="bg-white p-8 rounded-2xl shadow">
-      <i class="fa-solid fa-tree text-3xl text-primary mb-4"></i>
-      <h3 class="text-xl font-semibold mb-3">Tree Removal</h3>
-      <p class="text-gray-600">Safe removal of trees with full site clearance.</p>
-    </div>
+<div class="grid md:grid-cols-3 gap-8">
 
-    <div class="bg-white p-8 rounded-2xl shadow">
-      <i class="fa-solid fa-scissors text-3xl text-primary mb-4"></i>
-      <h3 class="text-xl font-semibold mb-3">Tree Pruning</h3>
-      <p class="text-gray-600">Improving tree health, safety, and appearance.</p>
-    </div>
+<!-- CARD -->
+<div class="bg-white p-6 rounded-xl shadow">
+<img src="https://assets.ls-assets.com/provider/istock/2191240437.jpg?w=768" class="rounded-lg mb-4">
+<h3 class="font-bold text-xl mb-2">Landscaping</h3>
+<p class="text-gray-600">Modern garden design and outdoor transformations.</p>
+</div>
 
-    <div class="bg-white p-8 rounded-2xl shadow">
-      <i class="fa-solid fa-leaf text-3xl text-primary mb-4"></i>
-      <h3 class="text-xl font-semibold mb-3">Garden Maintenance</h3>
-      <p class="text-gray-600">Complete outdoor care including lawns and hedges.</p>
-    </div>
+<div class="bg-white p-6 rounded-xl shadow">
+<img src="https://assets.ls-assets.com/provider/istock/2191237962.jpg?w=768" class="rounded-lg mb-4">
+<h3 class="font-bold text-xl mb-2">Tree Care</h3>
+<p class="text-gray-600">Safe pruning, shaping and tree maintenance.</p>
+</div>
 
-  </div>
+<div class="bg-white p-6 rounded-xl shadow">
+<img src="https://assets.ls-assets.com/provider/istock/2166370257.jpg?w=768" class="rounded-lg mb-4">
+<h3 class="font-bold text-xl mb-2">Garden Maintenance</h3>
+<p class="text-gray-600">Keeping your garden clean, healthy and sharp.</p>
+</div>
+
+</div>
+</div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="bg-[#EEF4EA] py-24">
-  <div class="max-w-7xl mx-auto px-6">
+<!-- GALLERY -->
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-6">
 
-    <h2 class="text-4xl font-bold text-center mb-16">Recent Projects</h2>
+<h2 class="text-3xl font-bold mb-10 text-center">Recent Work</h2>
 
-    <div class="grid md:grid-cols-2 gap-10">
+<div class="grid md:grid-cols-3 gap-6">
 
-      <div>
-        <img src="https://assets.ls-assets.com/provider/istock/2163376817.jpg" class="rounded-xl mb-4 w-full h-80 object-cover">
-        <h3 class="font-semibold text-lg">Garden Clearance</h3>
-        <p class="text-gray-600">Overgrown garden transformed into a clean outdoor space.</p>
-      </div>
+<img src="https://assets.ls-assets.com/provider/istock/2191240437.jpg?w=768" class="rounded-xl">
+<img src="https://assets.ls-assets.com/provider/istock/2220425691.jpg?w=768" class="rounded-xl">
+<img src="https://assets.ls-assets.com/provider/istock/2166370257.jpg?w=768" class="rounded-xl">
 
-      <div>
-        <img src="https://assets.ls-assets.com/provider/istock/1317553453.jpg" class="rounded-xl mb-4 w-full h-80 object-cover">
-        <h3 class="font-semibold text-lg">Tree Reduction</h3>
-        <p class="text-gray-600">Professional pruning improving safety and light.</p>
-      </div>
+</div>
 
-    </div>
-  </div>
+</div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-24 max-w-4xl mx-auto px-6 text-center">
-  <h2 class="text-4xl font-bold mb-6">Get a Free Quote</h2>
-  <p class="text-gray-600 mb-10">Fill in the form below and we’ll get back to you quickly.</p>
+<!-- CTA -->
+<section class="bg-[#2D5016] text-white py-20 text-center">
+<h2 class="text-4xl font-bold mb-6">Ready to Transform Your Garden?</h2>
+<p class="mb-8">Get a free quote today — no obligation.</p>
 
-  <form class="grid gap-4">
-    <input type="text" placeholder="Name" class="p-4 border rounded-lg">
-    <input type="tel" placeholder="Phone" class="p-4 border rounded-lg">
-    <textarea placeholder="Project details" class="p-4 border rounded-lg h-32"></textarea>
-    <button class="bg-primary text-white py-4 rounded-lg font-semibold">Send</button>
-  </form>
+<a href="tel:+441234567890"
+class="bg-white text-[#2D5016] px-8 py-4 rounded-lg font-bold">
+Call Now
+</a>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-primary text-white py-10 text-center">
-  <p>© 2026 All About Trees</p>
+<footer class="bg-[#1A1A1A] text-gray-400 py-10 text-center text-sm">
+<p>© 2026 All About Trees</p>
 </footer>
 
 </body>
