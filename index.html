@@ -3,167 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All About Trees - Expert Tree Surgery & Landscaping in Leicester</title>
+<title>All About Trees | Tree Surgery & Landscaping Leicester</title>
 
-<!-- Color Palette -->
-<style>
-:root {
-    --primary-color: #2D5016;
-    --primary-button-text-color: #FFFFFF;
-    --primary-button-hover-bg-color: #1F3810;
-    --primary-button-hover-text-color: #FFFFFF;
-
-    --secondary-button-bg-color: #FFFFFF;
-    --secondary-button-text-color: #2D5016;
-    --secondary-button-hover-bg-color: #F0F5ED;
-    --secondary-button-hover-text-color: #2D5016;
-
-    --accent-color: #7BA05B;
-
-    --dark-text-color: #1A1A1A;
-    --gray-text-color: #6B7280;
-
-    --light-background-color: #F7FAF5;
-    --medium-background-color: #EEF4EA;
-
-    --light-border-color: #E0E7DC;
-}
-</style>
-
-<!-- Fonts + Tailwind -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
-body { font-family: 'Inter', sans-serif; }
-h1, h2, h3 { font-family: 'Outfit', sans-serif; }
-</style>
 </head>
-
-<body class="bg-white text-[#1A1A1A]">
-
-<!-- HEADER -->
-<header class="sticky top-0 z-50 bg-white shadow-sm">
-<nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-
-<!-- LOGO -->
-<a href="/">
-<img src="https://assets.ls-assets.com/uploads/6a0bd2d5-23f2-4b8f-adf7-df0fa89f4fb9/1e4d7d7c-6084-4229-a92c-795ff3043bd0.webp?w=768"
-class="h-12">
-</a>
-
-<!-- NAV -->
-<div class="hidden md:flex gap-8 items-center">
-<a href="#" class="hover:text-[#2D5016]">Services</a>
-<a href="#" class="hover:text-[#2D5016]">Gallery</a>
-<a href="#" class="hover:text-[#2D5016]">About</a>
-<a href="#" class="hover:text-[#2D5016]">Contact</a>
-</div>
-
-<a href="tel:+441234567890"
-class="bg-[#2D5016] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1F3810]">
-Call Now
-</a>
-
-</nav>
-</header>
+<body class="font-sans">
 
 <!-- HERO -->
-<section class="relative h-[90vh] flex items-center">
+<section class="relative">
+    <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" class="absolute w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/70"></div>
 
-<img src="https://assets.ls-assets.com/provider/istock/2247263045.jpg?w=1920"
-class="absolute w-full h-full object-cover">
+    <div class="relative max-w-6xl mx-auto px-6 py-32 text-white">
+        <h1 class="text-5xl font-bold mb-6">
+            Professional Tree Surgery That Keeps Your Property Safe & Looking Its Best
+        </h1>
+        <p class="text-xl mb-8">
+            Reliable tree removal, pruning, and landscaping across Leicester. Fully insured, fast response, and clean results every time.
+        </p>
 
-<div class="absolute w-full h-full bg-black/60"></div>
+        <div class="flex gap-4">
+            <a href="#" class="bg-green-800 px-6 py-3 rounded-lg">Call Now</a>
+            <a href="#" class="bg-white text-green-800 px-6 py-3 rounded-lg">Get Quote</a>
+        </div>
+    </div>
+</section>
 
-<div class="relative max-w-7xl mx-auto px-6 text-white">
-<h1 class="text-5xl font-bold leading-tight mb-6">
-Expert Tree Surgery & Landscaping
-</h1>
-
-<p class="text-lg mb-8 max-w-xl text-gray-200">
-Professional, reliable tree care and landscaping services delivering high-quality results across Leicester.
-</p>
-
-<div class="flex gap-4">
-<a href="tel:+441234567890"
-class="bg-[#2D5016] px-6 py-3 rounded-lg font-semibold hover:bg-[#1F3810]">
-Call Now
-</a>
-
-<a href="#"
-class="bg-white text-[#2D5016] px-6 py-3 rounded-lg font-semibold">
-Get Quote
-</a>
-</div>
-</div>
+<!-- PROBLEM -->
+<section class="py-16 text-center max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Tired of unreliable or messy tree services?</h2>
+    <p class="text-gray-600">
+        Overgrown trees, unsafe branches, and poor workmanship can quickly become a problem.
+        Finding a team that actually turns up and leaves your property clean isn’t always easy.
+    </p>
+    <p class="mt-4 font-semibold text-green-800">That’s where we come in.</p>
 </section>
 
 <!-- SERVICES -->
-<section class="py-20 bg-[#F7FAF5]">
-<div class="max-w-7xl mx-auto px-6">
+<section class="bg-gray-100 py-20">
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
 
-<h2 class="text-3xl font-bold mb-10 text-center">
-Our Services
-</h2>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<!-- CARD -->
-<div class="bg-white p-6 rounded-xl shadow">
-<img src="https://assets.ls-assets.com/provider/istock/2191240437.jpg?w=768" class="rounded-lg mb-4">
-<h3 class="font-bold text-xl mb-2">Landscaping</h3>
-<p class="text-gray-600">Modern garden design and outdoor transformations.</p>
+<div class="bg-white p-6 rounded-xl">
+<h3 class="font-bold text-xl mb-2">Safe Tree Removal</h3>
+<p>We safely remove unwanted or dangerous trees without damaging your property.</p>
 </div>
 
-<div class="bg-white p-6 rounded-xl shadow">
-<img src="https://assets.ls-assets.com/provider/istock/2191237962.jpg?w=768" class="rounded-lg mb-4">
-<h3 class="font-bold text-xl mb-2">Tree Care</h3>
-<p class="text-gray-600">Safe pruning, shaping and tree maintenance.</p>
+<div class="bg-white p-6 rounded-xl">
+<h3 class="font-bold text-xl mb-2">Tree Pruning</h3>
+<p>Improve tree health, shape, and safety with expert trimming services.</p>
 </div>
 
-<div class="bg-white p-6 rounded-xl shadow">
-<img src="https://assets.ls-assets.com/provider/istock/2166370257.jpg?w=768" class="rounded-lg mb-4">
+<div class="bg-white p-6 rounded-xl">
+<h3 class="font-bold text-xl mb-2">Hedge Cutting</h3>
+<p>Clean, sharp hedges that keep your garden looking neat and maintained.</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl">
+<h3 class="font-bold text-xl mb-2">Stump Grinding</h3>
+<p>Remove unwanted stumps for a smooth and usable garden space.</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl">
 <h3 class="font-bold text-xl mb-2">Garden Maintenance</h3>
-<p class="text-gray-600">Keeping your garden clean, healthy and sharp.</p>
+<p>Regular care to keep your outdoor space looking its best year-round.</p>
 </div>
 
+<div class="bg-white p-6 rounded-xl">
+<h3 class="font-bold text-xl mb-2">Landscaping</h3>
+<p>Transform your garden into a clean, modern outdoor space.</p>
 </div>
+
 </div>
 </section>
 
-<!-- GALLERY -->
-<section class="py-20">
-<div class="max-w-7xl mx-auto px-6">
+<!-- HOW IT WORKS -->
+<section class="py-20 text-center">
+<h2 class="text-3xl font-bold mb-10">Simple, Stress-Free Process</h2>
 
-<h2 class="text-3xl font-bold mb-10 text-center">Recent Work</h2>
-
-<div class="grid md:grid-cols-3 gap-6">
-
-<img src="https://assets.ls-assets.com/provider/istock/2191240437.jpg?w=768" class="rounded-xl">
-<img src="https://assets.ls-assets.com/provider/istock/2220425691.jpg?w=768" class="rounded-xl">
-<img src="https://assets.ls-assets.com/provider/istock/2166370257.jpg?w=768" class="rounded-xl">
-
-</div>
-
+<div class="grid md:grid-cols-4 max-w-6xl mx-auto gap-6">
+<div>1. Contact Us</div>
+<div>2. We Assess</div>
+<div>3. We Complete Work</div>
+<div>4. Enjoy Results</div>
 </div>
 </section>
 
 <!-- CTA -->
-<section class="bg-[#2D5016] text-white py-20 text-center">
-<h2 class="text-4xl font-bold mb-6">Ready to Transform Your Garden?</h2>
-<p class="mb-8">Get a free quote today — no obligation.</p>
-
-<a href="tel:+441234567890"
-class="bg-white text-[#2D5016] px-8 py-4 rounded-lg font-bold">
-Call Now
-</a>
+<section class="bg-green-900 text-white text-center py-20">
+<h2 class="text-4xl font-bold mb-4">Ready to Transform Your Garden?</h2>
+<p class="mb-6">Get a free quote today — fast, reliable, professional service.</p>
+<a href="#" class="bg-white text-green-800 px-6 py-3 rounded-lg">Get Free Quote</a>
 </section>
-
-<!-- FOOTER -->
-<footer class="bg-[#1A1A1A] text-gray-400 py-10 text-center text-sm">
-<p>© 2026 All About Trees</p>
-</footer>
 
 </body>
 </html>
