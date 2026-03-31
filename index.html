@@ -8,99 +8,124 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Inter;background:#f4f6f3;color:#222}
-header{display:flex;justify-content:space-between;align-items:center;padding:15px;background:#fff}
-header h2{color:#2e5b1c}
-
-.hero{
-background:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
-color:#fff;padding:80px 20px
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #111;
 }
-.hero h1{font-size:32px}
-.hero p{margin:15px 0;line-height:1.6}
-
-.btn{display:block;width:100%;padding:15px;margin-top:10px;border-radius:10px;text-align:center;font-weight:600}
-.green{background:#2e5b1c;color:#fff}
-.white{background:#fff;color:#2e5b1c}
-
-.stats{background:#2e5b1c;color:#fff;display:grid;grid-template-columns:1fr 1fr;text-align:center;padding:30px 10px}
-
-.section{padding:40px 20px;text-align:center}
-.card{
-background:#fff;padding:20px;border-radius:15px;margin-top:20px;text-align:left;
-box-shadow:0 5px 15px rgba(0,0,0,0.05)
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
 }
-
-.gallery img{width:100%;border-radius:15px;margin-top:15px}
-
-.cta{
-background:url('https://images.unsplash.com/photo-1502082553048-f009c37129b9') center/cover;
-color:#fff;padding:60px 20px;text-align:center
+.hero {
+    background: url("https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62") center/cover;
+    color: white;
+    padding: 120px 0;
 }
-
-.footer{background:#111;color:#ccc;padding:40px 20px}
-.footer h3{color:#fff}
+h1 {font-size: 48px; margin-bottom: 20px;}
+h2 {font-size: 32px;}
+p {color: #555; line-height: 1.6;}
+.btn {
+    background: #2D5016;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.section {padding: 80px 0;}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.footer {
+    background: #111;
+    color: #aaa;
+    padding: 40px;
+    text-align: center;
+}
 </style>
 </head>
 
 <body>
 
-<header>
-<h2>🌳 All About Trees</h2>
-☰
-</header>
-
+<!-- HERO -->
 <section class="hero">
-<h1>Expert Tree Surgery & Landscaping in Leicester</h1>
-<p>Professional, reliable, and affordable tree services for homeowners across Leicester.</p>
-
-<div class="btn green">Call Now</div>
-<div class="btn white">Get a Free Quote</div>
+<div class="container">
+<h1>Expert Tree Surgery in Leicester</h1>
+<p>Professional tree removal, pruning, and emergency work carried out safely and efficiently.</p>
+<a class="btn">Get Free Quote</a>
+</div>
 </section>
 
-<div class="stats">
-<div><h2>15+</h2><p>Years Experience</p></div>
-<div><h2>500+</h2><p>Trees Cared For</p></div>
-<div><h2>100%</h2><p>Satisfaction</p></div>
-<div><h2>24hr</h2><p>Response Time</p></div>
+<!-- SERVICES -->
+<section class="section">
+<div class="container">
+<h2>Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+<h3>Tree Removal</h3>
+<p>Safe dismantling of dangerous or unwanted trees.</p>
 </div>
 
-<section class="section">
-<h2>Professional Tree & Garden Services</h2>
-
-<div class="card"><h3>Tree Removal</h3><p>Safe removal of dangerous or unwanted trees.</p></div>
-<div class="card"><h3>Tree Pruning & Trimming</h3><p>Improve health and safety.</p></div>
-<div class="card"><h3>Hedge Cutting</h3><p>Keep hedges neat and tidy.</p></div>
-<div class="card"><h3>Stump Grinding</h3><p>Remove unwanted tree stumps.</p></div>
-<div class="card"><h3>Garden Maintenance</h3><p>Full garden care services.</p></div>
-<div class="card"><h3>Landscaping</h3><p>Transform outdoor spaces.</p></div>
-
-</section>
-
-<section class="section gallery">
-<h2>Our Work</h2>
-<img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
-<img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9">
+<h3>Tree Pruning</h3>
+<p>Improve structure, health, and appearance of trees.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1592878904946-b3cd45f8e1d8">
+<h3>Stump Grinding</h3>
+<p>Complete removal of tree stumps below ground level.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600880292089-90e1ffe3c4b7">
+<h3>Emergency Work</h3>
+<p>Rapid response for storm damage and fallen trees.</p>
+</div>
+
+</div>
+</div>
 </section>
 
-<section class="cta">
-<h2>Ready to Transform Your Garden?</h2>
-<p>Get in touch today for a free quote.</p>
-<div class="btn white">Call Us Now</div>
-<div class="btn green">Request Free Quote</div>
+<!-- ABOUT -->
+<section class="section" style="background:#f5f5f5;">
+<div class="container">
+<h2>Why Choose Us</h2>
+<p>Fully insured, experienced, and trusted across Leicester. We deliver reliable and professional tree care services with attention to detail.</p>
+</div>
 </section>
 
-<footer class="footer">
-<h3>All About Trees</h3>
-<p>Leicester’s trusted tree surgery experts.</p>
+<!-- GALLERY -->
+<section class="section">
+<div class="container">
+<h2>Recent Work</h2>
 
-<p>📞 +44 1234 567890</p>
-<p>📧 info@allabouttrees.co.uk</p>
-<p>📍 Leicester, UK</p>
+<div class="grid">
+<img src="https://images.unsplash.com/photo-1618220179428-22790b461013">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf">
+</div>
 
-<p style="margin-top:20px">© 2026 All About Trees</p>
-</footer>
+</div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 All About Trees</p>
+</div>
 
 </body>
 </html>
