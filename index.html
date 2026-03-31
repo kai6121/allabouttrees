@@ -1,123 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All About Trees</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-<style>
-body { font-family: 'Inter', sans-serif; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All About Trees | Tree Surgery & Landscaping in Leicester</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <style>
+    :root {
+      --green: #2e7d32;
+      --dark-green: #1b5e20;
+      --light-green: #4caf50;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+    .header {
+      background: white;
+      padding: 15px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--green);
+    }
+    .logo img { height: 50px; }
+    .hero {
+      position: relative;
+      height: 520px;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+    .hero .subtitle {
+      font-size: 1.8rem;
+      color: #90ee90;
+      margin-bottom: 20px;
+    }
+    .badge {
+      background: rgba(0,0,0,0.7);
+      padding: 8px 16px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      margin: 10px 5px;
+    }
+    .btn-green {
+      background: var(--green);
+      color: white;
+    }
+    .btn-white {
+      background: white;
+      color: var(--green);
+      border: 2px solid var(--green);
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .stats {
+      background: var(--dark-green);
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .stat h2 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: #f0f8f0;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .why-us {
+      background: white;
+    }
+    .why-item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+    .why-icon {
+      width: 50px;
+      height: 50px;
+      background: #e8f5e9;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #ddd;
+      padding: 40px 20px 20px;
+    }
+    .contact-info {
+      margin: 20px 0;
+    }
+    .social-icons a {
+      font-size: 1.8rem;
+      margin-right: 15px;
+      color: #ddd;
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2rem; }
+      .hero .subtitle { font-size: 1.5rem; }
+    }
+  </style>
 </head>
+<body>
 
-<body class="text-gray-900">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <i class="fas fa-tree" style="font-size:2.2rem;"></i>
+      <span>All About Trees</span>
+    </div>
+    <i class="fas fa-bars" style="font-size:1.8rem; color:#2e7d32;"></i>
+  </header>
 
-<!-- HERO -->
-<section class="relative">
-<img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" class="absolute w-full h-full object-cover">
-<div class="absolute inset-0 bg-black/60"></div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="badge">
+      <i class="fas fa-shield-alt"></i>
+      <span>Fully Insured & Qualified</span>
+    </div>
+    <h1>Expert Tree Surgery & Landscaping in Leicester</h1>
+    <p class="subtitle">Professional, reliable, and affordable tree services for homeowners across Leicester.</p>
+    <p>From routine pruning to complete removals — we deliver quality workmanship you can trust.</p>
+    
+    <a href="#" class="btn btn-green" style="margin-top:30px;">
+      <i class="fas fa-phone"></i> Call Now
+    </a>
+    <a href="#" class="btn btn-white">
+      <i class="fas fa-clipboard-list"></i> Get a Free Quote
+    </a>
+  </section>
 
-<div class="relative max-w-6xl mx-auto px-6 py-28 text-white">
-<h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
-Expert Tree Surgery in Leicester
-</h1>
-<p class="text-lg md:text-xl text-gray-200 mb-8 max-w-xl">
-Professional tree removal, pruning, and emergency services carried out safely and efficiently.
-</p>
+  <!-- Trust Badges -->
+  <section style="background:white; padding:20px; text-align:center;">
+    <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
+      <div><i class="fas fa-check-circle" style="color:#4caf50;"></i> Free No-Obligation Quotes</div>
+      <div><i class="fas fa-check-circle" style="color:#4caf50;"></i> Fully Insured</div>
+      <div><i class="fas fa-check-circle" style="color:#4caf50;"></i> Local Family Business</div>
+    </div>
+  </section>
 
-<div class="flex flex-col sm:flex-row gap-4">
-<a class="bg-green-800 px-8 py-4 rounded-lg font-semibold">Get Free Quote</a>
-<a class="bg-white text-green-800 px-8 py-4 rounded-lg font-semibold">Call Now</a>
-</div>
-</div>
-</section>
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat">
+      <h2>15+</h2>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat">
+      <h2>500+</h2>
+      <p>Trees Cared For</p>
+    </div>
+    <div class="stat">
+      <h2>100%</h2>
+      <p>Satisfaction Rate</p>
+    </div>
+    <div class="stat">
+      <h2>24hr</h2>
+      <p>Response Time</p>
+    </div>
+  </section>
 
-<!-- STATS -->
-<section class="bg-green-900 text-white py-10">
-<div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 text-center gap-6">
-<div><h3 class="text-3xl font-bold">15+</h3><p>Years</p></div>
-<div><h3 class="text-3xl font-bold">500+</h3><p>Jobs Done</p></div>
-<div><h3 class="text-3xl font-bold">100%</h3><p>Satisfaction</p></div>
-<div><h3 class="text-3xl font-bold">24hr</h3><p>Response</p></div>
-</div>
-</section>
+  <!-- Services -->
+  <section>
+    <h2 style="text-align:center; margin-bottom:30px; color:var(--dark-green);">Professional Tree & Garden Services</h2>
+    
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-tree"></i></div>
+      <h3>Tree Removal</h3>
+      <p>Safe and efficient removal of dangerous or unwanted trees. Complete stump removal available.</p>
+      <ul style="margin-top:15px; color:#555;">
+        <li>✓ Dead or diseased trees</li>
+        <li>✓ Storm damage clearance</li>
+        <li>✓ Complete stump removal</li>
+      </ul>
+    </div>
 
-<!-- SERVICES -->
-<section class="py-20 bg-gray-50">
-<div class="max-w-6xl mx-auto px-6 text-center mb-12">
-<h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-<p class="text-gray-600 max-w-2xl mx-auto">
-Complete tree care services for residential and commercial properties.
-</p>
-</div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-scissors"></i></div>
+      <h3>Tree Pruning & Trimming</h3>
+      <p>Expert shaping and pruning to enhance tree health, appearance, and safety.</p>
+      <ul style="margin-top:15px; color:#555;">
+        <li>✓ Crown reduction</li>
+        <li>✓ Deadwood removal</li>
+        <li>✓ Shape & thin canopies</li>
+      </ul>
+    </div>
 
-<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-leaf"></i></div>
+      <h3>Garden Maintenance</h3>
+      <p>Complete garden care with regular maintenance packages available.</p>
+      <ul style="margin-top:15px; color:#555;">
+        <li>✓ Lawn care & mowing</li>
+        <li>✓ Planting & bedding</li>
+        <li>✓ Leaf & debris clearance</li>
+      </ul>
+    </div>
 
-<div class="bg-white p-6 rounded-xl">
-<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" class="rounded mb-4">
-<h3 class="font-semibold text-xl mb-2">Tree Removal</h3>
-<p class="text-gray-600">Safe dismantling and removal of hazardous trees.</p>
-</div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-mountain"></i></div>
+      <h3>Landscaping Services</h3>
+      <p>Transform your garden with professional landscaping from patios to planting schemes.</p>
+    </div>
 
-<div class="bg-white p-6 rounded-xl">
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="rounded mb-4">
-<h3 class="font-semibold text-xl mb-2">Pruning & Trimming</h3>
-<p class="text-gray-600">Maintain structure, health, and appearance.</p>
-</div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-cog"></i></div>
+      <h3>Stump Grinding</h3>
+      <p>Professional stump grinding below ground level for a clean finish.</p>
+    </div>
 
-<div class="bg-white p-6 rounded-xl">
-<img src="https://images.unsplash.com/photo-1592878904946-b3cd45f8e1d8" class="rounded mb-4">
-<h3 class="font-semibold text-xl mb-2">Stump Grinding</h3>
-<p class="text-gray-600">Remove stumps below ground level.</p>
-</div>
+    <div style="text-align:center; margin-top:30px;">
+      <a href="#" class="btn btn-green">View All Services →</a>
+    </div>
+  </section>
 
-</div>
-</section>
+  <!-- Why Choose Us -->
+  <section class="why-us">
+    <h2 style="text-align:center; margin-bottom:30px; color:var(--dark-green);">Why All About Trees</h2>
+    <h3 style="text-align:center; font-size:1.6rem; margin-bottom:30px;">Leicester's Trusted Tree Surgery Experts</h3>
+    
+    <div class="why-item">
+      <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+      <div>
+        <h4>Fully Insured & Qualified</h4>
+        <p>Complete peace of mind with comprehensive public liability insurance and trained professionals.</p>
+      </div>
+    </div>
+    
+    <div class="why-item">
+      <div class="why-icon"><i class="fas fa-pound-sign"></i></div>
+      <div>
+        <h4>Affordable & Transparent Pricing</h4>
+        <p>No hidden costs. Detailed quotes before any work begins.</p>
+      </div>
+    </div>
+    
+    <div class="why-item">
+      <div class="why-icon"><i class="fas fa-clock"></i></div>
+      <div>
+        <h4>Prompt & Reliable Service</h4>
+        <p>We arrive on time, work efficiently, and leave your property clean and tidy.</p>
+      </div>
+    </div>
+    
+    <div class="why-item">
+      <div class="why-icon"><i class="fas fa-recycle"></i></div>
+      <div>
+        <h4>Environmentally Responsible</h4>
+        <p>We recycle all green waste and follow eco-friendly practices.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- IMAGE + TEXT -->
-<section class="py-20">
-<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+  <!-- Gallery Teaser -->
+  <section style="background:#f8f9fa;">
+    <h2 style="text-align:center; margin-bottom:20px;">Stunning Transformations</h2>
+    <div class="gallery">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Garden transformation">
+      <img src="https://picsum.photos/id/201/600/400" alt="Tree work">
+      <img src="https://picsum.photos/id/133/600/400" alt="Landscaping">
+      <img src="https://picsum.photos/id/201/600/400" alt="Before after">
+    </div>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="#" class="btn btn-green">View Our Full Gallery</a>
+    </div>
+  </section>
 
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="rounded-xl">
+  <!-- Coverage -->
+  <section>
+    <h3 style="color:var(--green);">Serving Leicester & Surrounding Areas</h3>
+    <p>Leicester City Centre, Wigston, Loughborough, Market Harborough, Oadstone, Hinckley, Blaby and all of Leicestershire.</p>
+    <a href="#" class="btn btn-green" style="margin-top:20px; display:inline-block;">Check If We Cover Your Area</a>
+  </section>
 
-<div>
-<h2 class="text-3xl font-bold mb-4">Trusted Local Experts</h2>
-<p class="text-gray-600 mb-6">
-We are fully insured and experienced tree surgeons delivering reliable work across Leicester.
-</p>
+  <!-- Final CTA -->
+  <section style="background:var(--dark-green); color:white; text-align:center;">
+    <h2 style="font-size:2rem;">Ready to Transform Your Garden?</h2>
+    <p style="margin:20px 0;">Get in touch today for a free, no-obligation quote.</p>
+    <a href="tel:+441234567890" class="btn btn-white" style="display:block; margin:15px auto; max-width:320px;">
+      <i class="fas fa-phone"></i> Call Us Now
+    </a>
+    <a href="#" class="btn btn-green" style="display:block; margin:15px auto; max-width:320px;">
+      <i class="fas fa-envelope"></i> Request Free Quote
+    </a>
+  </section>
 
-<ul class="space-y-3">
-<li>✔ Fully insured</li>
-<li>✔ Affordable pricing</li>
-<li>✔ Fast response</li>
-<li>✔ Clean & tidy work</li>
-</ul>
-</div>
+  <!-- Footer -->
+  <footer>
+    <div style="text-align:center; margin-bottom:30px;">
+      <div class="logo" style="justify-content:center; color:white;">
+        <i class="fas fa-tree"></i>
+        <span>All About Trees</span>
+      </div>
+    </div>
 
-</div>
-</section>
+    <div class="contact-info">
+      <p><i class="fas fa-phone"></i> +44 1234 567890</p>
+      <p><i class="fas fa-envelope"></i> info@allabouttrees.co.uk</p>
+      <p><i class="fas fa-map-marker-alt"></i> Leicester, Leicestershire, UK</p>
+      <p><i class="fas fa-clock"></i> Mon-Sat: 8:00am - 6:00pm</p>
+    </div>
 
-<!-- GALLERY -->
-<section class="py-20 bg-gray-50">
-<div class="max-w-6xl mx-auto px-6 text-center mb-12">
-<h2 class="text-3xl font-bold">Recent Work</h2>
-</div>
+    <div class="social-icons" style="text-align:center; margin:30px 0;">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
 
-<div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 gap-4">
-<img src="https://images.unsplash.com/photo-1618220179428-22790b461013" class="rounded">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="rounded">
-<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" class="rounded">
-</div>
-</section>
-
-<!-- CTA -->
-<section class="bg-green-900 text-white py-20 text-center">
-<h2 class="text-3xl font-bold mb-6">Need Tree Work Done?</h2>
-<a class="bg-white text-green-800 px-8 py-4 rounded-lg font-semibold">Get Free Quote</a>
-</section>
+    <div style="text-align:center; font-size:0.9rem; border-top:1px solid #444; padding-top:20px;">
+      © 2026 All About Trees. All rights reserved.<br>
+      Privacy Policy | Terms of Service
+    </div>
+  </footer>
 
 </body>
 </html>
