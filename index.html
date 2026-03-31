@@ -6,9 +6,7 @@
 <title>All About Trees | Premium Landscaping</title>
 
 <style>
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -21,16 +19,16 @@ body {
 nav {
   position: fixed;
   width: 100%;
-  padding: 18px 40px;
+  padding: 16px 40px;
   display: flex;
   justify-content: space-between;
-  background: rgba(255,255,255,0.8);
-  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
 nav h1 {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 2px;
 }
 
@@ -45,24 +43,26 @@ nav a {
 .hero {
   height: 100vh;
   background:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
-    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6")
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef")
     center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  padding: 20px;
 }
 
 .hero h2 {
-  font-size: 64px;
+  font-size: 60px;
   letter-spacing: -1px;
 }
 
 .hero p {
-  max-width: 600px;
+  max-width: 650px;
   margin: 20px auto;
+  font-size: 16px;
   opacity: 0.9;
 }
 
@@ -70,9 +70,9 @@ nav a {
   display: inline-block;
   margin-top: 25px;
   padding: 14px 26px;
-  border-radius: 999px;
   background: #1f7a4d;
   color: white;
+  border-radius: 999px;
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s;
@@ -82,7 +82,7 @@ nav a {
   transform: scale(1.05);
 }
 
-/* SECTIONS */
+/* SECTION */
 .section {
   padding: 120px 20px;
   max-width: 1100px;
@@ -91,7 +91,7 @@ nav a {
 }
 
 .section h2 {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 20px;
 }
 
@@ -114,21 +114,14 @@ nav a {
   padding: 30px;
   border-radius: 14px;
   border: 1px solid #eee;
-  transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.card.visible {
-  opacity: 1;
-  transform: translateY(0);
+  transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-8px);
 }
 
-/* IMAGE BLOCKS */
+/* IMAGE SECTIONS */
 .image {
   height: 65vh;
   background-size: cover;
@@ -152,8 +145,8 @@ nav a {
 }
 
 .contact a {
-  margin-top: 25px;
   display: inline-block;
+  margin-top: 25px;
   padding: 14px 28px;
   border-radius: 999px;
   background: #1f7a4d;
@@ -170,7 +163,7 @@ footer {
   font-size: 13px;
 }
 
-/* FADE IN ANIMATION */
+/* ANIMATION */
 .fade {
   opacity: 0;
   transform: translateY(40px);
@@ -182,6 +175,7 @@ footer {
   transform: translateY(0);
 }
 </style>
+
 </head>
 
 <body>
@@ -199,31 +193,34 @@ footer {
 <!-- HERO -->
 <section class="hero fade">
   <div>
-    <h2>Crafting Outdoor Excellence</h2>
-    <p>Premium tree care and landscaping designed with precision, care, and attention to detail.</p>
-    <a href="#services" class="btn">Explore Services</a>
+    <h2>Precision Landscaping</h2>
+    <p>
+      Professional tree care and landscaping services designed to enhance,
+      maintain, and transform outdoor spaces to the highest standard.
+    </p>
+    <a href="#services" class="btn">View Services</a>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="section fade">
   <h2>Our Services</h2>
-  <p>We deliver high-end landscaping solutions tailored to your property.</p>
+  <p>We deliver clean, reliable, and high-quality outdoor solutions.</p>
 
   <div class="services">
     <div class="card fade">
       <h3>Tree Removal</h3>
-      <p>Safe, controlled, and professional removal with minimal disruption.</p>
+      <p>Safe, controlled removal using professional-grade equipment.</p>
     </div>
 
     <div class="card fade">
       <h3>Tree Pruning</h3>
-      <p>Precision pruning to maintain health, structure, and aesthetics.</p>
+      <p>Improving tree structure, health, and long-term growth.</p>
     </div>
 
     <div class="card fade">
       <h3>Landscaping</h3>
-      <p>Modern, clean outdoor designs that elevate your entire space.</p>
+      <p>Complete outdoor redesigns with a clean, modern finish.</p>
     </div>
   </div>
 </section>
@@ -233,11 +230,11 @@ footer {
 
 <!-- ABOUT -->
 <section id="about" class="section fade">
-  <h2>About Us</h2>
+  <h2>About All About Trees</h2>
   <p>
-    All About Trees is a professional landscaping company committed to delivering
-    exceptional outdoor environments. We combine expertise, reliability, and
-    craftsmanship to achieve outstanding results every time.
+    We are a trusted landscaping company focused on delivering premium results.
+    Our work combines expertise, attention to detail, and a commitment to
+    excellence on every project we undertake.
   </p>
 </section>
 
@@ -246,8 +243,8 @@ footer {
 
 <!-- CONTACT -->
 <section id="contact" class="contact fade">
-  <h2>Let’s Work Together</h2>
-  <p>Call today for a free, no-obligation quote.</p>
+  <h2>Let’s Transform Your Space</h2>
+  <p>Call today for expert advice and a free quote.</p>
   <a href="tel:+441234567890">Call Now</a>
 </section>
 
@@ -257,7 +254,6 @@ footer {
 </footer>
 
 <script>
-/* FADE IN ON SCROLL */
 const elements = document.querySelectorAll('.fade');
 
 const observer = new IntersectionObserver(entries => {
