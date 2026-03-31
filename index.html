@@ -5,127 +5,119 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>All About Trees</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #111;
-}
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
-}
-.hero {
-    background: url("https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62") center/cover;
-    color: white;
-    padding: 120px 0;
-}
-h1 {font-size: 48px; margin-bottom: 20px;}
-h2 {font-size: 32px;}
-p {color: #555; line-height: 1.6;}
-.btn {
-    background: #2D5016;
-    color: white;
-    padding: 14px 28px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-}
-.section {padding: 80px 0;}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 30px;
-}
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.footer {
-    background: #111;
-    color: #aaa;
-    padding: 40px;
-    text-align: center;
-}
+body { font-family: 'Inter', sans-serif; }
 </style>
 </head>
 
-<body>
+<body class="text-gray-900">
 
 <!-- HERO -->
-<section class="hero">
-<div class="container">
-<h1>Expert Tree Surgery in Leicester</h1>
-<p>Professional tree removal, pruning, and emergency work carried out safely and efficiently.</p>
-<a class="btn">Get Free Quote</a>
+<section class="relative">
+<img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" class="absolute w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/60"></div>
+
+<div class="relative max-w-6xl mx-auto px-6 py-28 text-white">
+<h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+Expert Tree Surgery in Leicester
+</h1>
+<p class="text-lg md:text-xl text-gray-200 mb-8 max-w-xl">
+Professional tree removal, pruning, and emergency services carried out safely and efficiently.
+</p>
+
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-green-800 px-8 py-4 rounded-lg font-semibold">Get Free Quote</a>
+<a class="bg-white text-green-800 px-8 py-4 rounded-lg font-semibold">Call Now</a>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="bg-green-900 text-white py-10">
+<div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 text-center gap-6">
+<div><h3 class="text-3xl font-bold">15+</h3><p>Years</p></div>
+<div><h3 class="text-3xl font-bold">500+</h3><p>Jobs Done</p></div>
+<div><h3 class="text-3xl font-bold">100%</h3><p>Satisfaction</p></div>
+<div><h3 class="text-3xl font-bold">24hr</h3><p>Response</p></div>
 </div>
 </section>
 
 <!-- SERVICES -->
-<section class="section">
-<div class="container">
-<h2>Our Services</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
-<h3>Tree Removal</h3>
-<p>Safe dismantling of dangerous or unwanted trees.</p>
+<section class="py-20 bg-gray-50">
+<div class="max-w-6xl mx-auto px-6 text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">
+Complete tree care services for residential and commercial properties.
+</p>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
-<h3>Tree Pruning</h3>
-<p>Improve structure, health, and appearance of trees.</p>
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-6 rounded-xl">
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" class="rounded mb-4">
+<h3 class="font-semibold text-xl mb-2">Tree Removal</h3>
+<p class="text-gray-600">Safe dismantling and removal of hazardous trees.</p>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1592878904946-b3cd45f8e1d8">
-<h3>Stump Grinding</h3>
-<p>Complete removal of tree stumps below ground level.</p>
+<div class="bg-white p-6 rounded-xl">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="rounded mb-4">
+<h3 class="font-semibold text-xl mb-2">Pruning & Trimming</h3>
+<p class="text-gray-600">Maintain structure, health, and appearance.</p>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600880292089-90e1ffe3c4b7">
-<h3>Emergency Work</h3>
-<p>Rapid response for storm damage and fallen trees.</p>
+<div class="bg-white p-6 rounded-xl">
+<img src="https://images.unsplash.com/photo-1592878904946-b3cd45f8e1d8" class="rounded mb-4">
+<h3 class="font-semibold text-xl mb-2">Stump Grinding</h3>
+<p class="text-gray-600">Remove stumps below ground level.</p>
 </div>
 
-</div>
 </div>
 </section>
 
-<!-- ABOUT -->
-<section class="section" style="background:#f5f5f5;">
-<div class="container">
-<h2>Why Choose Us</h2>
-<p>Fully insured, experienced, and trusted across Leicester. We deliver reliable and professional tree care services with attention to detail.</p>
+<!-- IMAGE + TEXT -->
+<section class="py-20">
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="rounded-xl">
+
+<div>
+<h2 class="text-3xl font-bold mb-4">Trusted Local Experts</h2>
+<p class="text-gray-600 mb-6">
+We are fully insured and experienced tree surgeons delivering reliable work across Leicester.
+</p>
+
+<ul class="space-y-3">
+<li>✔ Fully insured</li>
+<li>✔ Affordable pricing</li>
+<li>✔ Fast response</li>
+<li>✔ Clean & tidy work</li>
+</ul>
+</div>
+
 </div>
 </section>
 
 <!-- GALLERY -->
-<section class="section">
-<div class="container">
-<h2>Recent Work</h2>
-
-<div class="grid">
-<img src="https://images.unsplash.com/photo-1618220179428-22790b461013">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf">
+<section class="py-20 bg-gray-50">
+<div class="max-w-6xl mx-auto px-6 text-center mb-12">
+<h2 class="text-3xl font-bold">Recent Work</h2>
 </div>
 
+<div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 gap-4">
+<img src="https://images.unsplash.com/photo-1618220179428-22790b461013" class="rounded">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="rounded">
+<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" class="rounded">
 </div>
 </section>
 
-<!-- FOOTER -->
-<div class="footer">
-<p>© 2026 All About Trees</p>
-</div>
+<!-- CTA -->
+<section class="bg-green-900 text-white py-20 text-center">
+<h2 class="text-3xl font-bold mb-6">Need Tree Work Done?</h2>
+<a class="bg-white text-green-800 px-8 py-4 rounded-lg font-semibold">Get Free Quote</a>
+</section>
 
 </body>
 </html>
