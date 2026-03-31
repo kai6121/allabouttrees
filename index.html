@@ -44,7 +44,7 @@ nav a {
   height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
-    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470")
+    url("https://images.unsplash.com/photo-1593696140826-c58b021acf8b")
     center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@ nav a {
 }
 
 .hero h2 {
-  font-size: 58px;
+  font-size: 54px;
 }
 
 .hero p {
@@ -70,11 +70,6 @@ nav a {
   color: white;
   border-radius: 999px;
   text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
 }
 
 /* SECTION */
@@ -116,37 +111,44 @@ nav a {
   transform: translateY(-8px);
 }
 
-/* GALLERY */
-.gallery {
+/* SLIDERS */
+.slider-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 40px;
   margin-top: 50px;
 }
 
-.gallery img {
-  width: 100%;
+.slider {
+  position: relative;
+}
+
+.before-after {
+  position: relative;
+  overflow: hidden;
   border-radius: 12px;
 }
 
-/* IMAGE */
-.image {
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
+.before-after img {
+  width: 100%;
+  display: block;
 }
 
-.img1 {
-  background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef");
+.after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
 }
 
-.img2 {
-  background-image: url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e");
+.range {
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* TESTIMONIALS */
 .testimonials {
-  background: #fff;
+  background: white;
   padding: 80px 20px;
 }
 
@@ -175,7 +177,7 @@ nav a {
   text-decoration: none;
 }
 
-/* FLOATING CALL BUTTON */
+/* CALL BUTTON */
 .call-btn {
   position: fixed;
   bottom: 20px;
@@ -185,7 +187,6 @@ nav a {
   padding: 14px 18px;
   border-radius: 50px;
   text-decoration: none;
-  font-size: 14px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
@@ -215,7 +216,6 @@ footer {
 
 <body>
 
-<!-- NAV -->
 <nav>
   <h1>ALL ABOUT TREES</h1>
   <div>
@@ -225,81 +225,96 @@ footer {
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero fade">
   <div>
-    <h2>Expert Landscaping</h2>
-    <p>Professional tree care and outdoor transformation services delivered with precision and care.</p>
-    <a href="#services" class="btn">Explore Services</a>
+    <h2>Professional Landscaping</h2>
+    <p>High-quality garden care, tree services, and outdoor transformations built to last.</p>
+    <a href="#services" class="btn">View Services</a>
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services" class="section fade">
   <h2>Our Services</h2>
 
   <div class="services">
     <div class="card fade">
       <h3>Tree Removal</h3>
-      <p>Safe and controlled removal with minimal disruption.</p>
+      <p>Safe and controlled removal of trees using professional equipment.</p>
     </div>
 
     <div class="card fade">
       <h3>Tree Pruning</h3>
-      <p>Maintain healthy growth and improve tree structure.</p>
+      <p>Improve tree health, structure, and long-term growth.</p>
     </div>
 
     <div class="card fade">
-      <h3>Landscaping</h3>
-      <p>Clean, modern outdoor spaces tailored to your property.</p>
+      <h3>Garden Maintenance</h3>
+      <p>Regular upkeep to keep your garden clean, sharp, and healthy.</p>
     </div>
   </div>
 </section>
 
-<!-- IMAGE -->
-<section class="image img1 fade"></section>
-
-<!-- WORK / GALLERY -->
 <section id="work" class="section fade">
-  <h2>Recent Projects</h2>
+  <h2>Our Work</h2>
+  <p>Drag to see real garden transformations.</p>
 
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
-    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
-    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+  <div class="slider-container">
+
+    <div class="slider">
+      <div class="before-after">
+        <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b">
+        <div class="after">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6">
+        </div>
+      </div>
+      <input type="range" min="0" max="100" value="50" class="range">
+    </div>
+
+    <div class="slider">
+      <div class="before-after">
+        <img src="https://images.unsplash.com/photo-1591955506264-3f5a6834570a">
+        <div class="after">
+          <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
+        </div>
+      </div>
+      <input type="range" min="0" max="100" value="50" class="range">
+    </div>
+
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section class="testimonials fade">
   <div class="testimonial">
-    “Absolutely incredible work. The team transformed our garden completely — highly professional.”
+    “Extremely professional service. Our garden looks completely transformed.”
   </div>
 
   <div class="testimonial">
-    “Reliable, efficient, and high-quality. Easily the best landscaping service we've used.”
+    “Reliable, clean work and excellent results every time.”
   </div>
 </section>
 
-<!-- IMAGE -->
-<section class="image img2 fade"></section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact fade">
+<section class="contact fade" id="contact">
   <h2>Get a Free Quote</h2>
-  <p>Speak directly with a professional today.</p>
+  <p>Call today and speak directly with a professional.</p>
   <a href="tel:+441234567890">Call Now</a>
 </section>
 
-<!-- FOOTER -->
 <footer>
   © 2026 All About Trees
 </footer>
 
-<!-- FLOATING CALL -->
 <a class="call-btn" href="tel:+441234567890">📞 Call</a>
 
 <script>
+document.querySelectorAll('.slider').forEach(slider => {
+  const range = slider.querySelector('.range');
+  const after = slider.querySelector('.after');
+
+  range.addEventListener('input', () => {
+    after.style.width = range.value + '%';
+  });
+});
+
 const elements = document.querySelectorAll('.fade');
 
 const observer = new IntersectionObserver(entries => {
