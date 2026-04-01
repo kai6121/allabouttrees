@@ -1,210 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All About Trees Leicester - Premium tree surgery, hedge trimming, lawn care & garden maintenance. Fully insured local experts with 16+ years experience and 5.0★ reviews.">
-    <title>All About Trees Leicester | Premium Tree & Garden Services</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
-        .tail-container * { font-family: 'Inter', system_ui, sans-serif; }
-        .heading-font { font-family: 'Playfair Display', sans-serif; }
-        
-        .photo-grid img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 1.5rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All About Trees</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Inter', sans-serif; }
+
+/* Smooth fade animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
 </head>
-<body class="tail-container bg-white overflow-x-hidden">
 
-    <!-- NAVBAR -->
-    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center">
-            <div class="flex items-center gap-x-3">
-                <div class="w-10 h-10 bg-emerald-700 rounded-2xl flex items-center justify-center text-white text-3xl flex-shrink-0">🌳</div>
-                <div>
-                    <span class="heading-font text-2xl font-bold tracking-tight text-emerald-800">All About Trees</span>
-                    <span class="block text-[10px] font-medium text-emerald-600 -mt-0.5 tracking-widest">LEICESTER</span>
-                </div>
-            </div>
-            
-            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
-                <a href="#services" class="hover:text-emerald-700">Services</a>
-                <a href="#work" class="hover:text-emerald-700">Our Work</a>
-                <a href="#reviews" class="hover:text-emerald-700">Reviews</a>
-                <a href="#why" class="hover:text-emerald-700">Why Us</a>
-            </div>
-            
-            <div class="flex items-center gap-x-3">
-                <a href="tel:07123456890" class="hidden sm:flex items-center gap-x-2 text-emerald-700 font-semibold text-sm">
-                    <i class="fas fa-phone"></i> 07123 456890
-                </a>
-            </div>
-        </div>
-    </nav>
+<body class="text-gray-900">
 
-    <!-- HERO -->
-    <header class="min-h-screen flex items-center text-white bg-cover bg-center relative" 
-            style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://picsum.photos/id/1015/2000/1200');">
-        <div class="max-w-7xl mx-auto px-5 py-20">
-            <div class="max-w-lg">
-                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-5 py-2 rounded-full text-sm mb-6">
-                    <span class="text-xl">⭐</span>
-                    <span>5.0 (62 reviews) • 16+ years</span>
-                </div>
-                
-                <h1 class="heading-font text-5xl sm:text-6xl font-bold leading-none tracking-tighter mb-6">
-                    Premium Tree Surgery &amp; Garden Care
-                </h1>
-                <p class="text-xl text-white/90 mb-10">
-                    Expert hedge trimming, flawless lawns, and meticulous garden maintenance in Leicester.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="tel:07123456890" 
-                       class="flex items-center justify-center gap-x-3 bg-white text-emerald-800 px-8 py-5 rounded-3xl font-semibold text-base shadow-xl">
-                        <i class="fas fa-phone"></i> CALL 07123 456890
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+<!-- HEADER -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="bg-green-800 text-white px-3 py-2 rounded font-bold">AAT</div>
+<span class="font-semibold text-lg">All About Trees</span>
+</div>
+<a href="#contact" class="bg-green-800 text-white px-5 py-2 rounded-lg font-semibold hover:bg-green-900 transition">Get Quote</a>
+</div>
+</header>
 
-    <!-- SERVICES -->
-    <section id="services" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-5">
-            <div class="text-center mb-12">
-                <h2 class="heading-font text-4xl font-bold">Our Services</h2>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-8 rounded-3xl shadow">
-                    <div class="text-5xl mb-6">🌳</div>
-                    <h3 class="text-xl font-semibold mb-3">Tree Surgery &amp; Removal</h3>
-                    <p class="text-gray-600 text-sm">Crown reduction, thinning, deadwood removal and safe felling.</p>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow">
-                    <div class="text-5xl mb-6">✂️</div>
-                    <h3 class="text-xl font-semibold mb-3">Hedge Trimming</h3>
-                    <p class="text-gray-600 text-sm">Professional shaping and maintenance of all hedge types.</p>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow">
-                    <div class="text-5xl mb-6">🌱</div>
-                    <h3 class="text-xl font-semibold mb-3">Lawn &amp; Garden Care</h3>
-                    <p class="text-gray-600 text-sm">Striped mowing, tidy-ups and full garden transformations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="relative h-[90vh] flex items-center">
+<img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" class="absolute w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/60"></div>
 
-    <!-- OUR WORK - YOUR TWO REAL PHOTOS -->
-    <section id="work" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-5">
-            <div class="text-center mb-12">
-                <h2 class="heading-font text-4xl font-bold">Our Recent Work</h2>
-                <p class="text-gray-600 mt-2">Real projects from Leicester &amp; Leicestershire</p>
-            </div>
-            
-            <div class="photo-grid grid grid-cols-1 gap-8">
-                <img src="https://lh3.googleusercontent.com/W_3dFvqiwPfHx07lwbgZ04th_pUZ-doxfNDg2Eif-C6ylIpf6K6bpnZActzfow" 
-                     alt="Tree and garden transformation" class="shadow">
-                
-                <img src="https://lh3.googleusercontent.com/6Pnc4wpKkeZenEwSwXl2TIPG2ycaeM3vDL3m_ZAY5KNzIM1X8x5l0sLeOoYBPg" 
-                     alt="Neat green hedge and lawn" class="shadow">
-            </div>
-        </div>
-    </section>
+<div class="relative max-w-6xl mx-auto px-6 text-white fade-up">
+<h1 class="text-4xl md:text-6xl font-bold mb-6">
+Expert Tree Surgery in Leicester
+</h1>
+<p class="text-lg text-gray-200 mb-8 max-w-xl">
+Tree removal, pruning, stump grinding & emergency callouts.
+</p>
 
-    <!-- REVIEWS -->
-    <section id="reviews" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-5">
-            <div class="text-center mb-12">
-                <h2 class="heading-font text-4xl font-bold">Client Reviews</h2>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="review-card bg-white p-7 rounded-3xl shadow text-sm">
-                    <div class="flex text-emerald-600 mb-4">★★★★★</div>
-                    <p class="italic">"Excellent hedge trimming and lawn work. Professional team and beautiful results."</p>
-                    <div class="mt-6 font-medium text-xs">— Sarah T., Oadby</div>
-                </div>
-                <div class="review-card bg-white p-7 rounded-3xl shadow text-sm">
-                    <div class="flex text-emerald-600 mb-4">★★★★★</div>
-                    <p class="italic">"Transformed our garden. Very tidy and high-quality service."</p>
-                    <div class="mt-6 font-medium text-xs">— Mark W., Wigston</div>
-                </div>
-                <div class="review-card bg-white p-7 rounded-3xl shadow text-sm">
-                    <div class="flex text-emerald-600 mb-4">★★★★★</div>
-                    <p class="italic">"Reliable, punctual and left the garden spotless. Highly recommend."</p>
-                    <div class="mt-6 font-medium text-xs">— David P., Leicester</div>
-                </div>
-                <!-- Additional review -->
-                <div class="review-card bg-white p-7 rounded-3xl shadow text-sm md:col-span-3 lg:col-span-1">
-                    <div class="flex text-emerald-600 mb-4">★★★★★</div>
-                    <p class="italic">"The cleanest hedge work we've ever had. They even tidied up better than expected. Outstanding service!"</p>
-                    <div class="mt-6 font-medium text-xs">— Rachel M., Blaby</div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#contact" class="bg-green-800 px-8 py-4 rounded-lg font-semibold hover:scale-105 transition">Get Free Quote</a>
+<a href="tel:+441234567890" class="bg-white text-green-800 px-8 py-4 rounded-lg font-semibold hover:scale-105 transition">Call Now</a>
+</div>
+</div>
+</section>
 
-    <!-- WHY US -->
-    <section id="why" class="py-20 bg-emerald-700 text-white">
-        <div class="max-w-7xl mx-auto px-5">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="heading-font text-4xl font-bold">Why Choose Us</h2>
-                    <ul class="mt-8 space-y-6 text-base">
-                        <li class="flex gap-4"><span class="text-2xl">🛡️</span> Fully insured</li>
-                        <li class="flex gap-4"><span class="text-2xl">🏠</span> Local Leicester team</li>
-                        <li class="flex gap-4"><span class="text-2xl">🧹</span> We leave every garden spotless</li>
-                        <li class="flex gap-4"><span class="text-2xl">⭐</span> 5.0 Google rating</li>
-                    </ul>
-                </div>
-                <div class="text-center md:text-left">
-                    <div class="inline-flex flex-col items-center bg-white/10 backdrop-blur rounded-3xl px-10 py-8">
-                        <div class="text-6xl font-light">16+</div>
-                        <div class="text-sm tracking-widest uppercase mt-2">Years Experience</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- SERVICES -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-6xl mx-auto px-6 text-center mb-12 fade-up">
+<h2 class="text-3xl font-bold mb-4">Our Services</h2>
+</div>
 
-    <!-- CONTACT -->
-    <section class="py-16 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-5 text-center">
-            <h2 class="text-3xl font-semibold mb-4">Ready to improve your garden?</h2>
-            <a href="tel:07123456890" class="inline-flex items-center gap-x-3 text-3xl font-semibold hover:text-emerald-400">
-                <i class="fas fa-phone"></i> 07123 456890
-            </a>
-        </div>
-    </section>
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
 
-    <!-- FOOTER -->
-    <footer class="bg-black text-white py-12">
-        <div class="max-w-7xl mx-auto px-5 text-center text-sm">
-            <div class="flex justify-center items-center gap-x-3 mb-6">
-                <div class="w-9 h-9 bg-emerald-700 rounded-2xl flex items-center justify-center text-3xl">🌳</div>
-                <span class="heading-font text-2xl">All About Trees Leicester</span>
-            </div>
-            <p class="opacity-60">Premium Tree Surgery • Hedge Trimming • Lawn Care • Fully Insured</p>
-            <p class="text-xs opacity-40 mt-8">© 2026 All About Trees Leicester</p>
-        </div>
-    </footer>
+<div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition fade-up">
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" class="rounded mb-4">
+<h3 class="font-semibold text-xl mb-2">Tree Removal</h3>
+<p class="text-gray-600">Safe removal of dangerous trees.</p>
+</div>
 
-    <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+<div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition fade-up">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="rounded mb-4">
+<h3 class="font-semibold text-xl mb-2">Tree Pruning</h3>
+<p class="text-gray-600">Improve structure and health.</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition fade-up">
+<img src="https://images.unsplash.com/photo-1592878904946-b3cd45f8e1d8" class="rounded mb-4">
+<h3 class="font-semibold text-xl mb-2">Stump Grinding</h3>
+<p class="text-gray-600">Remove stumps completely.</p>
+</div>
+
+</div>
+</section>
+
+<!-- WHY US -->
+<section class="py-20">
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="rounded-xl fade-up">
+
+<div class="fade-up">
+<h2 class="text-3xl font-bold mb-4">Why Choose Us</h2>
+<ul class="space-y-3 text-gray-600">
+<li>✔ Fully insured</li>
+<li>✔ Fast response</li>
+<li>✔ Affordable pricing</li>
+<li>✔ Clean & tidy work</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact" class="bg-green-900 text-white py-20">
+<div class="max-w-4xl mx-auto px-6 text-center fade-up">
+<h2 class="text-3xl font-bold mb-6">Get Your Free Quote</h2>
+
+<form action="https://formspree.io/f/YOUR-ID" method="POST" class="space-y-4">
+<input type="text" name="name" placeholder="Your Name" required class="w-full p-4 rounded text-black">
+<input type="email" name="email" placeholder="Email" required class="w-full p-4 rounded text-black">
+<input type="tel" name="phone" placeholder="Phone" class="w-full p-4 rounded text-black">
+<textarea name="message" placeholder="What do you need?" required class="w-full p-4 rounded text-black"></textarea>
+
+<button class="bg-white text-green-800 px-8 py-4 rounded-lg font-semibold hover:scale-105 transition">
+Send Request
+</button>
+</form>
+
+</div>
+</section>
+
+<!-- SCRIPT -->
+<script>
+const elements = document.querySelectorAll('.fade-up');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 50) {
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
 </body>
 </html>
